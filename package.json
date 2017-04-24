@@ -12,21 +12,22 @@
   ],
   "scripts": {
     "build": "nwb build-react-component",
+    "postinstall": "npm run build",
     "clean": "nwb clean-module && npm clean-demo",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "15.x"
-  },
-  "devDependencies": {
+  "dependencies": {
     "nwb": "0.15.x",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {},
   "author": "",
   "homepage": "",
   "license": "MIT",
